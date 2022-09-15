@@ -746,15 +746,16 @@ header {
     width: 100%;
     transition: all 0.5s ease;
   }
+
   #copyRight {
     display: flex;
     flex-direction: row;
     padding: 5% 8% 5% 8%;
   }
+
   .hideText {
     display: flex;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
