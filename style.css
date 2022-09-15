@@ -329,6 +329,10 @@ header {
   cursor: pointer;
 }
 
+#crLogo img {
+  width: 50px;
+}
+
 #partners div img {
   max-width: 100px;
 }
@@ -384,6 +388,12 @@ header {
   color: #d3d3d3;
 }
 
+#crLogo {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
 #partners div {
   display: flex;
   flex-direction: row;
@@ -395,33 +405,21 @@ header {
 }
 
 #copyRight {
-display: flex;
-flex-direction: row;
-padding: 5% 15% 5% 15%;
-}
-
-#crLogo {
   display: flex;
   flex-direction: row;
-  flex: 1;
-}
-
-#crLogo img {
-  width: 50px;
-  
+  padding: 5% 15% 5% 15%;
 }
 
 #crTxt {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
-.crtTxt{
+.crtTxt {
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   color: rgba(39, 42, 49, 0.7);
   font-size: 10px;
 }
@@ -429,7 +427,7 @@ padding: 5% 15% 5% 15%;
 .crTxtLogo {
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   color: rgba(39, 42, 49, 1);
   font-size: 10px;
 }
