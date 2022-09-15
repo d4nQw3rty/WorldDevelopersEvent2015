@@ -540,7 +540,7 @@ header {
   .listAnchor:hover {
     padding: 10px;
     color: #ec5242;
-    border: #ec5242 1px solid;
+    border: 5px solid #ec5242;
   }
 
   .txtGreeting {
@@ -783,7 +783,7 @@ header {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 30px;
+    gap: 50px;
   }
 
   .listAnchor {
@@ -804,7 +804,7 @@ header {
   .listAnchor:hover {
     padding: 10px;
     color: #ec5242;
-    border: #ec5242 1px solid;
+    border: #ec5242 5px solid;
   }
 
   .logo {
