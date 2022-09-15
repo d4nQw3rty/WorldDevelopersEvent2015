@@ -909,3 +909,75 @@ header {
     max-width: 150px;
   }
 }
+
+/* ------------------ About page Style ------------- */
+
+.abouttxtContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 10%;
+  gap: 20px;
+}
+
+.atextTitle {
+  color: #ec5242;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  font-family: 'Cocogoose', sans-serif;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.atxtParagraph {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  padding: 16px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+}
+
+.atxtParagraph p {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(39, 42, 49, 0.6);
+}
+
+.aboutContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.aboutContactP {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0 5%;
+  color: rgba(39, 42, 49, 0.6);
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(39, 42, 49, 1);
+}
+
+#aboutLogoInfo {
+  height: 100vh;
+  background-color: #ec5242;
+}
