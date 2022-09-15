@@ -330,7 +330,7 @@ header {
 }
 
 #crLogo img {
-  width: 50px;
+  width: 70px;
 }
 
 #partners div img {
@@ -391,7 +391,8 @@ header {
 #crLogo {
   display: flex;
   flex-direction: row;
-  flex: 1;
+  align-items: center;
+  width: 49%;
 }
 
 #partners div {
@@ -407,13 +408,14 @@ header {
 #copyRight {
   display: flex;
   flex-direction: row;
-  padding: 5% 15% 5% 15%;
+  padding: 5% 5% 5% 5%;
 }
 
 #crTxt {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 49%;
 }
 
 .crtTxt {
@@ -421,7 +423,7 @@ header {
   flex-direction: column;
   justify-content: center;
   color: rgba(39, 42, 49, 0.7);
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .crTxtLogo {
@@ -429,7 +431,11 @@ header {
   flex-direction: column;
   justify-content: center;
   color: rgba(39, 42, 49, 1);
-  font-size: 10px;
+  font-size: 14px;
+}
+
+.hideText {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -740,6 +746,15 @@ header {
     width: 100%;
     transition: all 0.5s ease;
   }
+  #copyRight {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 8% 5% 8%;
+  }
+  .hideText {
+    display: flex;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -881,5 +896,15 @@ header {
     font-size: 15px;
     margin-top: 7px;
     color: #272a31;
+  }
+
+  #copyRight {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 15% 5% 15%;
+  }
+
+  #partners div img {
+    max-width: 150px;
   }
 }
