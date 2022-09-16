@@ -488,6 +488,7 @@ header {
   flex-direction: row;
   margin-top: 8px;
   padding: 16px;
+  line-height: 30px;
   border: 1px solid #d3d3d3;
   background: #fff;
 }
@@ -509,8 +510,7 @@ header {
 }
 
 .aboutContactP {
-  display: flex;
-  flex-direction: row;
+  
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
@@ -1135,5 +1135,15 @@ header {
     border: 1px solid #d3d3d3;
     background: #fff;
     margin: 8px 15% 0 15%;
-  } 
+  }
+  
+.atxtParagraphp {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(39, 42, 49, 0.6);
+  text-align: center;
+}
+ 
 }
