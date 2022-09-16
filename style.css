@@ -265,7 +265,7 @@ header {
   color: #272a31;
 }
 
-.hide {
+.hide, .longTxt {
   display: none;
 }
 
@@ -492,9 +492,7 @@ header {
   background: #fff;
 }
 
-.atxtParagraph p {
-  display: flex;
-  flex-direction: row;
+.atxtParagraphp {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -633,6 +631,7 @@ header {
   flex-wrap: wrap;
   font-size: 25px;
 }
+
 
 @media only screen and (min-width: 768px) {
   #heading {
@@ -954,6 +953,23 @@ header {
   .hideText {
     display: flex;
   }
+
+  /* -----------About page style--------- */
+
+  .atextTitle {
+    color: #ec5242;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+    margin: 0 8% 0 8%;
+  }
+
+  .longTxt {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1106,4 +1122,18 @@ header {
   #partners div img {
     max-width: 150px;
   }
+
+  .hideAll {
+    display: none;
+  }
+
+
+  .atxtParagraph {
+    display: flex;
+    flex-direction: row;    
+    padding: 16px;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+    margin: 8px 15% 0 15%;
+  } 
 }
