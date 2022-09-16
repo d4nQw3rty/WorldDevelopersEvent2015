@@ -24,8 +24,15 @@ header {
   margin-left: 7%;
 }
 
-#btnImg {
+.logoText {
+  font-size: 14px;
+  color: #272a31;
+}
+
+#btnImg,
+#abtnImg {
   width: 20px;
+  cursor: pointer;
 }
 
 .txtContainer {
@@ -290,6 +297,15 @@ header {
   gap: 5px;
 }
 
+.logodisplay img {
+  width: 70px;
+}
+
+.eventPic img,
+.eventPic2 {
+  width: 100%;
+}
+
 #seeMore img {
   width: 10px;
 }
@@ -305,11 +321,17 @@ header {
   margin-bottom: 0;
 }
 
+.menu-cont ul li a {
+  text-decoration: none;
+  color: #ec5242;
+}
+
 #seeProgram a {
   color: #d3d3d3;
 }
 
-#menu {
+#menu,
+#amenu {
   top: 0;
   position: fixed;
   background-image: url('img/backgrounds/header.png');
@@ -355,7 +377,6 @@ header {
 }
 
 .menu-cont ul li {
-  color: #ec5242;
   font-size: 30px;
   font-weight: 900;
   text-decoration: none;
@@ -422,7 +443,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgba(39, 42, 49, 0.7);
+  color: rgba(39, 42, 49, 0.8);
   font-size: 14px;
 }
 
@@ -430,12 +451,187 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgba(39, 42, 49, 1);
+  color: #272a31;
   font-size: 14px;
+  font-weight: 900;
 }
 
 .hideText {
   display: none;
+}
+
+/* ------------------ About page Style ------------- */
+
+.abouttxtContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 10%;
+  gap: 20px;
+}
+
+.atextTitle {
+  color: #ec5242;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  font-family: 'Cocogoose', sans-serif;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.atxtParagraph {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  padding: 16px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+}
+
+.atxtParagraph p {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(39, 42, 49, 0.6);
+  text-align: center;
+}
+
+.aboutContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.aboutContactP {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0 5%;
+  color: rgba(39, 42, 49, 0.6);
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(39, 42, 49, 1);
+}
+
+#aboutLogoInfo,
+#pastSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 15% 7% 10% 7%;
+}
+
+#aboutLogoInfo h2,
+#pastSection h2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(39, 42, 49, 0.8);
+  line-height: 30px;
+  margin: 0 15% 15px 15%;
+}
+
+.separator {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 1px;
+  background-color: #ec5242;
+}
+
+.logedetails {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: rgba(39, 42, 49, 0.7);
+}
+
+.logodisplay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15% 0 15% 0;
+  border: 1px solid  rgba(39, 42, 49, 0.2);
+}
+
+.Sectionseparator {
+  border: 1px solid  rgba(39, 42, 49, 0.1);
+}
+
+.eventPic {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30vh;
+  gap: 30px;
+  background-image: url("img/01.jpg");
+  background-size: cover;
+}
+
+.eventPic2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30vh;
+  gap: 30px;
+  background-image: url("img/02.jpg");
+  background-size: cover;
+}
+
+.eventPic::before,
+.eventPic2::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ec5242;
+  opacity: 0.5;
+}
+
+.dateLast {
+  position: absolute;
+  font-size: 50px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.dateLastTxt {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 25px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -477,7 +673,8 @@ header {
     color: #fff;
   }
 
-  #btnImg {
+  #btnImg,
+  #abtnImg {
     display: none;
   }
 
@@ -738,7 +935,8 @@ header {
     gap: 5px;
   }
 
-  #menu {
+  #menu,
+  #amenu {
     display: none;
     top: 0;
     position: fixed;
@@ -908,108 +1106,4 @@ header {
   #partners div img {
     max-width: 150px;
   }
-}
-
-/* ------------------ About page Style ------------- */
-
-.abouttxtContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10%;
-  margin-left: 7%;
-  margin-right: 7%;
-  margin-bottom: 10%;
-  gap: 20px;
-}
-
-.atextTitle {
-  color: #ec5242;
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  font-family: 'Cocogoose', sans-serif;
-  font-weight: normal;
-  font-size: 32px;
-}
-
-.atxtParagraph {
-  display: flex;
-  flex-direction: row;
-  margin-top: 8px;
-  padding: 16px;
-  border: 1px solid #d3d3d3;
-  background: #fff;
-}
-
-.atxtParagraph p {
-  display: flex;
-  flex-direction: row;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(39, 42, 49, 0.6);
-  text-align: center;
-}
-
-.aboutContact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2%;
-}
-
-.aboutContactP {
-  display: flex;
-  flex-direction: row;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  padding: 0 5%;
-  color: rgba(39, 42, 49, 0.6);
-}
-
-.underline {
-  text-decoration: underline;
-  cursor: pointer;
-  font-weight: 600;
-  color: rgba(39, 42, 49, 1);
-}
-
-#aboutLogoInfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 15% 7%;
-}
-
-#aboutLogoInfo h2 {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  font-size: 20px;
-  color: rgba(39, 42, 49, 1);
-  line-height: 30px;
-  margin: 0 15% 15px 15%;
-}
-
-.separator {
-  display: flex;
-  flex-direction: column;
-  width: 30px;
-  height: 1px;
-  background-color: #ec5242;
-}
-
-.logedetails {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  margin-top: 15px;
-  font-size: 14px;
-  color: rgba(39, 42, 49, 0.7);
 }
