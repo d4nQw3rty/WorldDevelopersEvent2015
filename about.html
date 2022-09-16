@@ -17,11 +17,36 @@
 
 <body>
     <header>
-        <nav class="mobileMenu">
-            <img src="img/buttons/mobile_menu.png" id="btnImg" alt="Hamburger type button to display menu">
+        <div id="heading">
+            <div class="headingImg">
+                <img src="img/logos/facebook.png" class='fb' alt="">
+                <img src="img/logos/twitter.png" class="twt" alt="">
+            </div>
+            <ul class="headingList">
+                <li>English</li>
+                <li>My Page</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+        <nav class="mobileMenu">            
+            <img src="img/buttons/mobile_menu.png" id="abtnImg" alt="Hamburger type button to display menu">
+            <a href="index.html">
+                <div class="logo hide">                
+                  <img src="img/logos/icon.png" alt="3d Logo">
+                  <p class="logoText">Developer <br> Summit 2022</p>               
+                </div>
+            </a>
+            <ul class="navList hide">
+                <li><a href="#1" class="listAnchor">About</a></li>
+                <li><a href="#2" class="listAnchor">Program</a></li>
+                <li><a href="#3" class="listAnchor">Join</a></li>
+                <li><a href="#4" class="listAnchor">Sponsor</a></li>
+                <li><a href="#5" class="listAnchor">News</a></li>
+                <li><a href="#6" class="listAnchor">3D Campaing</a></li>
+            </ul>
         </nav>
         <div class='abouttxtContainer'>
-            <h1 class="txtGreeting">"Hello! Developers"</h1>
+            <h1 class="txtGreeting hideAll ">"Hello! Developers"</h1>
             <div>
                 <h2 class='atextTitle'>Developers Global Summit 2022</h2>
             </div>
@@ -32,7 +57,8 @@
                 </p>
             </div>
             <div class="aboutContact">
-                <p class="aboutContactP">Please contact us per Email <br> for any futher questions about <br> Developers Summit
+                <p class="aboutContactP">Please contact us per Email <br> for any futher questions about <br> Developers
+                    Summit
                     2022</p>
                 <p class="underline">3dsyssummit2022@3dsys.com</p>
             </div>
@@ -41,9 +67,63 @@
     <section id="aboutLogoInfo">
         <h2>3D Systems <br> Developers Summit 2022 Logo</h2>
         <div class="separator"></div>
-        <p class="logedetails">The logo of 3D Systems Developers Summit 2022 <br> was decided through the logo competition <br> from 8. June to 7 July.</p>
+        <p class="logedetails">The logo of 3D Systems Developers Summit 2022 <br> was decided through the logo
+            competition <br> from 8. June to 7 July.</p>
+        <div class="logodisplay">
+            <img src="img/logos/icon.png" alt="3d systems logo">
+            <p class="crTxtLogo">Developers<br>Summit 2022</p>
+        </div>
+    </section>
+    <div class="Sectionseparator"></div>
+    <section id="pastSection">
+        <h2>See the past Developers Summit</h2>
+        <div class="separator"></div>
+        <p class="logedetails">Take a look at the last two Developers Summits which took place in California and Bombay
+        </p>
+        <div class="eventPic">
+            <span class="dateLast">2016 <br> <span class="dateLastTxt"> Developers Summit 2016 in California
+                </span></span>
+        </div>.
+        <div class="eventPic2">
+            <span class="dateLast">2018 <br> <span class="dateLastTxt"> Developers Summit 2018 in Mombay</span></span>
+        </div>
     </section>
 
+    <section id="partners">
+        <h2>Partner</h2>
+        <div><img src="img/logos/mozilla.png" alt="mozilla logo"><img src="img/logos/airbnb.png" alt="air bnd logo"><img
+                src="img/logos/g.png" alt="google logo"><img src="img/logos/naver.png" alt="naver logo"><img
+                src="img/logos/daumkakao.png" alt=""></div>
+    </section>
+    <footer id="copyRight">
+        <div id="crLogo">
+            <a href="index.html"><img src="img/logos/icon.png" alt="3d systems logo"></a>
+            <p class="crTxtLogo">Developers<br>Summit 2022</p>
+        </div>
+        <div id="crTxt">
+            <h3 class="crtTxt">3D Systems 2022</h3>
+            <p class="crtTxt hideAll">freedom-respecting software</p>
+            <p class="crtTxt hideText">freedom-respecting software Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut tortor pretium
+                viverra suspendisse potenti nullam ac. Leo in vitae turpis massa.</p>
+        </div>
+    </footer>
+    <div id="amenu" class="active">
+        <div class="menu-cont" id="menuList">
+            <div id="iconMenu">
+                <img src="img/icons/close.png" class="amenuClose" alt="icone-menu">
+            </div>            
+                <ul>
+                    <li class="amenuClose"><a href="">About</a></li>
+                    <li class="amenuClose"><a href="">Program</a></li>
+                    <li class="amenuClose"><a href="">Join</a></li>
+                    <li class="amenuClose"><a href="">Join</a></li>
+                    <li class="amenuClose"><a href="">News</a></li>
+                    <li class="amenuClose"><a href="">3D Campaing</a></li>
+                </ul>            
+        </div>
+      </div>
+      <script src="mainAbout.js"></script>
 </body>
 
 </html>
