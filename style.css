@@ -457,7 +457,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%;
+  gap: 5px;
 }
 
 #acrTxt {
@@ -1155,7 +1155,6 @@ header {
     padding-bottom: 5%;
     background-color: rgba(51, 53, 58, 0.9);
   }
-
 
   .partnersimg {
     max-width: 200px;
