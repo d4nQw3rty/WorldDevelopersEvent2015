@@ -299,7 +299,7 @@ header {
 }
 
 .logodisplay img {
-  width: 70px;
+  width: 80%;
 }
 
 .eventPic img,
@@ -387,7 +387,7 @@ header {
 
 .menu-cont ul li:hover {
   background-color: #d3d3d3;
-}
+crlogo1}
 
 .active {
   transform: translate(-768px);
@@ -631,6 +631,35 @@ header {
   flex-wrap: wrap;
   font-size: 25px;
 }
+
+.logolongtxt {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: rgba(39, 42, 49, 0.7);
+  margin: 0;
+}
+
+.ltxtCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:5px;
+  margin: 1%;
+}
+
+.crTxtLogo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #272a31;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+
+
 
 @media only screen and (min-width: 768px) {
   #heading {
@@ -969,6 +998,61 @@ header {
   .longTxt {
     display: flex;
   }
+
+  .aboutContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    width: 100%;
+  }
+  
+
+  .aboutContactP {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    padding: 0 5%;
+    color: rgba(39, 42, 49, 0.6);
+  }
+
+  #aboutLogoInfo,
+#pastSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5% 8% 5% 8%;
+}
+
+
+#aboutLogoInfo h2,
+#pastSection h2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 24px;
+  color: rgba(39, 42, 49, 0.8);
+  line-height: 30px;
+  margin: 0 15% 1% 15%;
+}
+
+
+.logodisplay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 5% 0 5% 0;
+  border: 1px solid  rgba(39, 42, 49, 0.2);
+  margin: 5% 0 0 0;
+}
+
+  
 }
 
 @media only screen and (min-width: 1024px) {
