@@ -28,13 +28,14 @@
         </ul>
     </div>
     <nav class="mobileMenu">
-      <div class="logo hide">
-          <a href="#home">
-          <img src="img/logos/icon.png" alt="3d Logo"></a>
-          <p>Dev. <br> Conference <br> 2022</p>
-      </div>
+        <a href="index.html">
+            <div class="logo hide">                
+              <img src="img/logos/icon.png" alt="3d Logo">
+              <p class="logoText">Developer <br> Summit 2022</p>               
+            </div>
+        </a>
       <ul class="navList hide">
-          <li><a href="#1" class="listAnchor">About</a></li>
+          <li><a href="about.html" class="listAnchor">About</a></li>
           <li><a href="#2" class="listAnchor">Program</a></li>
           <li><a href="#3" class="listAnchor">Join</a></li>
           <li><a href="#4" class="listAnchor">Sponsor</a></li>
@@ -100,38 +101,42 @@
           alt="Down pointer arrow"></button>
 </section>
 <section id="partners">
-  <h2>Partner</h2>
-  <div><img src="img/logos/mozilla.png" alt="mozilla logo"><img src="img/logos/airbnb.png" alt="air bnd logo"><img src="img/logos/g.png" alt="google logo"><img src="img/logos/naver.png" alt="naver logo"><img src="img/logos/daumkakao.png" alt=""></div>
-</section>
-<footer id="copyRight">
-  <div id="crLogo">
-    <img src="img/logos/icon.png" alt="3d systems logo">
-    <p  class="crTxtLogo">Dilligent<br>Development<br>Devotion</p>
+  <h2 id='partnersh2'>Partner</h2>
+  <div id='partnersimgcont'>
+      <img class='partnersimg' src="img/logos/mozilla.png" alt="mozilla logo">
+      <img class='partnersimg' src="img/logos/airbnb.png" alt="air bnd logo">
+      <img src="img/logos/g.png" class='partnersimg' alt="google logo">
+      <img src="img/logos/naver.png" alt="naver logo" class='partnersimg'>
+      <img src="img/logos/daumkakao.png" alt="" class='partnersimg'>
   </div>
+</section>
+<footer id="copyRight">  
+  <div id="crLogo">
+    <a href="index.html"><img id="crLogoimg" src="img/logos/icon.png" alt="3d systems logo"></a>
+    <p  class="crTxtLogo">Developers<br>Summit 2022</p>
+  </div> 
   <div id="crTxt">
     <h3 class="crtTxt">3D Systems 2022</h3>
     <p class="crtTxt hideAll">freedom-respecting software</p>
     <p class="crtTxt hideText">freedom-respecting software Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Leo in vitae turpis massa.</p>
   </div>
+  
 </footer>
-
-
 <div id="menu" class="active">
   <div class="menu-cont" id="menuList">
       <div id="iconMenu">
           <img src="img/icons/close.png" class="menuClose" alt="icone-menu">
       </div>            
-          <ul>
-              <li class="menuClose">About</li>
-              <li class="menuClose">Program</li>
-              <li class="menuClose">Join</li>
-              <li class="menuClose">Sponsor</li>
-              <li class="menuClose">News</li>
-              <li class="menuClose">3D Campaing</li>
+          <ul class="menuItem">
+              <li class="menuClose"><a href="about.html">About</a></li>
+              <li class="menuClose"><a href="">Program</a></li>
+              <li class="menuClose"><a href="">Join</a></li>
+              <li class="menuClose"><a href="">Sponsor</a></li>
+              <li class="menuClose"><a href="">News</a></li>
+              <li class="menuClose"><a href="">3D Campaing</a></li>
           </ul>            
   </div>
 </div>
   <script src="main.js"></script>
 </body>
-
 </html>
