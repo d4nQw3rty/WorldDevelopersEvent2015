@@ -265,7 +265,8 @@ header {
   color: #272a31;
 }
 
-.hide, .longTxt {
+.hide,
+.longTxt {
   display: none;
 }
 
@@ -510,7 +511,6 @@ header {
 }
 
 .aboutContactP {
-  
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
@@ -631,7 +631,6 @@ header {
   flex-wrap: wrap;
   font-size: 25px;
 }
-
 
 @media only screen and (min-width: 768px) {
   #heading {
@@ -1127,23 +1126,20 @@ header {
     display: none;
   }
 
-
   .atxtParagraph {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     padding: 16px;
     border: 1px solid #d3d3d3;
     background: #fff;
     margin: 8px 15% 0 15%;
   }
-  
-.atxtParagraphp {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: normal;
-  color: rgba(39, 42, 49, 0.6);
-  text-align: center;
-}
- 
+
+  .atxtParagraphp {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: rgba(39, 42, 49, 0.6);
+    text-align: center;
+  }
 }
