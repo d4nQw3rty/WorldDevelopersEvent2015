@@ -24,8 +24,15 @@ header {
   margin-left: 7%;
 }
 
-#btnImg {
+.logoText {
+  font-size: 14px;
+  color: #272a31;
+}
+
+#btnImg,
+#abtnImg {
   width: 20px;
+  cursor: pointer;
 }
 
 .txtContainer {
@@ -258,7 +265,8 @@ header {
   color: #272a31;
 }
 
-.hide {
+.hide,
+.longTxt {
   display: none;
 }
 
@@ -290,6 +298,15 @@ header {
   gap: 5px;
 }
 
+.logodisplay img {
+  width: 80%;
+}
+
+.eventPic img,
+.eventPic2 {
+  width: 100%;
+}
+
 #seeMore img {
   width: 10px;
 }
@@ -305,11 +322,17 @@ header {
   margin-bottom: 0;
 }
 
+.menu-cont ul li a {
+  text-decoration: none;
+  color: #ec5242;
+}
+
 #seeProgram a {
   color: #d3d3d3;
 }
 
-#menu {
+#menu,
+#amenu {
   top: 0;
   position: fixed;
   background-image: url('img/backgrounds/header.png');
@@ -329,11 +352,15 @@ header {
   cursor: pointer;
 }
 
-#crLogo img {
+#crLogoimg {
   width: 70px;
 }
 
-#partners div img {
+#acrlogoimg {
+  width: 120px;
+}
+
+.partnersimg {
   max-width: 100px;
 }
 
@@ -355,7 +382,6 @@ header {
 }
 
 .menu-cont ul li {
-  color: #ec5242;
   font-size: 30px;
   font-weight: 900;
   text-decoration: none;
@@ -371,7 +397,8 @@ header {
   transform: translate(-768px);
 }
 
-#partners {
+#partners,
+#apartners {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -381,7 +408,7 @@ header {
   background-color: rgba(51, 53, 58, 0.9);
 }
 
-#partners h2 {
+#partnersh2 {
   display: flex;
   flex-direction: column;
   margin: 5%;
@@ -395,7 +422,14 @@ header {
   width: 49%;
 }
 
-#partners div {
+#acrLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 49%;
+}
+
+#partnersimgcont {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -411,31 +445,265 @@ header {
   padding: 5% 5% 5% 5%;
 }
 
+#acopyRight {
+  display: none;
+  flex-direction: row;
+  gap: 5%;
+  padding: 5% 5% 5% 5%;
+  background-color: #272a31;
+}
+
 #crTxt {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 49%;
+  gap: 5px;
+}
+
+#acrTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
 }
 
 .crtTxt {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgba(39, 42, 49, 0.7);
+  color: rgba(39, 42, 49, 0.8);
   font-size: 14px;
+}
+
+.acrtTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
 }
 
 .crTxtLogo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgba(39, 42, 49, 1);
+  color: #272a31;
   font-size: 14px;
+  font-weight: 900;
+}
+
+.acrTxtLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #272a31;
+  font-size: 14px;
+  font-weight: 900;
 }
 
 .hideText {
   display: none;
+}
+
+/* ------------------ About page Style ------------- */
+
+.abouttxtContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 10%;
+  gap: 20px;
+}
+
+.atextTitle {
+  color: #ec5242;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  font-family: 'Cocogoose', sans-serif;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.atxtParagraph {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  padding: 16px;
+  line-height: 30px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+}
+
+.atxtParagraphp {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(39, 42, 49, 0.6);
+  text-align: center;
+}
+
+.aboutContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.aboutContactP {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0 5%;
+  color: rgba(39, 42, 49, 0.6);
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(39, 42, 49, 1);
+}
+
+#aboutLogoInfo,
+#pastSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 15% 7% 10% 7%;
+}
+
+#aboutLogoInfo h2,
+#pastSection h2 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(39, 42, 49, 0.8);
+  line-height: 30px;
+  margin: 0 15% 15px 15%;
+}
+
+.separator {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 1px;
+  background-color: #ec5242;
+}
+
+.logedetails {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: rgba(39, 42, 49, 0.7);
+}
+
+.logodisplay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15% 0 15% 0;
+  border: 1px solid  rgba(39, 42, 49, 0.2);
+}
+
+.Sectionseparator {
+  border: 1px solid  rgba(39, 42, 49, 0.1);
+}
+
+.eventPic {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30vh;
+  gap: 30px;
+  background-image: url("img/01.jpg");
+  background-size: cover;
+}
+
+.eventPic2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30vh;
+  gap: 30px;
+  background-image: url("img/02.jpg");
+  background-size: cover;
+}
+
+.eventPic::before,
+.eventPic2::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ec5242;
+  opacity: 0.5;
+}
+
+.dateLast {
+  position: absolute;
+  font-size: 50px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.dateLastTxt {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 25px;
+}
+
+.logolongtxt {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(39, 42, 49, 0.7);
+  margin: 0;
+}
+
+.ltxtCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 1%;
+}
+
+.crTxtLogo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #272a31;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.eventPicCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -477,7 +745,8 @@ header {
     color: #fff;
   }
 
-  #btnImg {
+  #btnImg,
+  #abtnImg {
     display: none;
   }
 
@@ -540,7 +809,7 @@ header {
   .listAnchor:hover {
     padding: 10px;
     color: #ec5242;
-    border: #ec5242 1px solid;
+    border: 5px solid #ec5242;
   }
 
   .txtGreeting {
@@ -738,7 +1007,16 @@ header {
     gap: 5px;
   }
 
-  #menu {
+  #partnersh2 {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    color: #d3d3d3;
+    font-size: 30px;
+  }
+
+  #menu,
+  #amenu {
     display: none;
     top: 0;
     position: fixed;
@@ -750,11 +1028,173 @@ header {
   #copyRight {
     display: flex;
     flex-direction: row;
-    padding: 5% 8% 5% 8%;
+    padding: 5% 15% 5% 15%;
   }
 
   .hideText {
     display: flex;
+  }
+
+  /* -----------About page style--------- */
+
+  .atextTitle {
+    color: #ec5242;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+    margin: 0 8% 0 8%;
+  }
+
+  .longTxt {
+    display: flex;
+  }
+
+  .aboutContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  .aboutContactP {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    padding: 0 5%;
+    color: rgba(39, 42, 49, 0.6);
+  }
+
+  #aboutLogoInfo,
+  #pastSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5% 8% 5% 8%;
+  }
+
+  #aboutLogoInfo h2,
+  #pastSection h2 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 24px;
+    color: rgba(39, 42, 49, 0.8);
+    line-height: 30px;
+    margin: 0 15% 1% 15%;
+  }
+
+  .logodisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 5% 0 5% 0;
+    border: 1px solid  rgba(39, 42, 49, 0.2);
+    margin: 5% 0 0 0;
+  }
+
+  .logedetails {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: rgba(39, 42, 49, 0.7);
+  }
+
+  .eventPicCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .eventPic {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 30vh;
+    gap: 30px;
+    background-image: url("img/01.jpg");
+    background-size: cover;
+  }
+
+  .eventPic2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 30vh;
+    gap: 30px;
+    background-image: url("img/02.jpg");
+    background-size: cover;
+  }
+
+  #apartners {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 5%;
+    background-color: rgba(51, 53, 58, 0.9);
+  }
+
+  .partnersimg {
+    max-width: 200px;
+  }
+
+  #crLogoimg {
+    width: 120px;
+  }
+
+  #acopyRight {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 15% 5% 15%;
+    background-color: #272a31;
+  }
+
+  .acrTxtLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 900;
+  }
+
+  #crTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    gap: 5px;
+  }
+
+  .crTxtLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #272a31;
+    font-size: 20px;
+    font-weight: 900;
   }
 }
 
@@ -783,7 +1223,7 @@ header {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 30px;
+    gap: 50px;
   }
 
   .listAnchor {
@@ -804,7 +1244,7 @@ header {
   .listAnchor:hover {
     padding: 10px;
     color: #ec5242;
-    border: #ec5242 1px solid;
+    border: #ec5242 5px solid;
   }
 
   .logo {
@@ -905,7 +1345,50 @@ header {
     padding: 5% 15% 5% 15%;
   }
 
-  #partners div img {
-    max-width: 150px;
+  .hideAll {
+    display: none;
+  }
+
+  .atxtParagraph {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+    margin: 8px 15% 0 15%;
+  }
+
+  .atxtParagraphp {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: rgba(39, 42, 49, 0.6);
+    text-align: center;
+  }
+
+  .eventPic {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 30vh;
+    gap: 30px;
+    background-image: url("img/01.jpg");
+    background-size: cover;
+  }
+
+  .eventPic2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 30vh;
+    gap: 30px;
+    background-image: url("img/02.jpg");
+    background-size: cover;
   }
 }
