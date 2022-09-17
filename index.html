@@ -5,12 +5,138 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://fonts.cdnfonts.com/css/cocogoose?styles=44178" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
   <link rel="stylesheet" href="style.css">  
   <title>World Developers Summit 2022</title>
 </head>
 <body>
-  <h1 id="h1">Hello World</h1> 
+  <header>
+    <div id="heading">
+        <div class="headingImg">
+            <img src="img/logos/facebook.png" class='fb' alt="Facebook logo image">
+            <img src="img/logos/twitter.png" class="twt" alt="twitter logo image">
+        </div>
+        <ul class="headingList">
+            <li>English</li>
+            <li>My Page</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+    <nav class="mobileMenu">
+        <a href="index.html">
+            <div class="logo hide">                
+              <img src="img/logos/icon.png" alt="3d Logo">
+              <p class="logoText">Developer <br> Summit 2022</p>               
+            </div>
+        </a>
+      <ul class="navList hide">
+          <li><a href="about.html" class="listAnchor">About</a></li>
+          <li><a href="#2" class="listAnchor">Program</a></li>
+          <li><a href="#3" class="listAnchor">Join</a></li>
+          <li><a href="#4" class="listAnchor">Sponsor</a></li>
+          <li><a href="#5" class="listAnchor">News</a></li>
+          <li><a href="#6" class="listAnchor">3D Campaing</a></li>
+      </ul>
+      <img src="img/buttons/mobile_menu.png" id="btnImg" alt="Hamburger type button to display menu">
+  </nav>
+  <div class='txtContainer'>
+      <h1 class="txtGreeting">"Hello! Developers"</h1>
+      <div>
+          <h2 class='textTitle'>Developers Global Summit 2022</h2>
+      </div>
+      <div class="txtParagraph">
+          <p>You will have the chance to learn the latest software development testing technologies, the best
+              practices, and discover new ways to solve complex development problems.
+          </p>
+      </div>
+      <div class="dateContainer">
+          <h2 class="txtDate">19/10/2022 (MON) ~ 20/10/2022(TUE)</h2>
+      </div>
+      <div class="txtDirection ">
+          <p>@PoliedroCaracas, Caracas - Venezuela.</p>
+      </div>
+  </div>
+</header>
+<section id="mainProgram">
+  <h2 class="mainTitle">Main Program</h2>
+  <div id="programs"></div>
+  <div class="btnContainer">
+      <button type="submit" class="mobileBtn" id="programBtn">Join Developer Best Practice Conference <br>
+          2022</button>
+  </div>
+  <h3 id="seeProgram" class="hide"><a href="#">SEE THE WHOLE PROGRAMM</a></h3>
+</section>
+<section id="speakers">
+  <div class="speakerTitleContainer">
+      <h2 class="speakersTitle">Featured Speakers</h2>
+  </div>
+  <div id="speakerResume">
+      <div id="exponentSample">
+          <div class="expositor" id="speaker1">
+              <div class="expositorImg"><img src="img/speakers/speaker_01.png" alt="expositor image"></div>
+              <div class="expositorTxt">
+                  <h2 class="expositorH2">Yochai Benkler</h2>
+                  <h3 class="expositorH3">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School
+                  </h3>
+                  <p class="expositorP">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </div>
+          <div class="expositor" id="speaker3">
+              <div class="expositorImg"><img src="img/speakers/speaker_03.png" alt="expositor image"></div>
+              <div class="expositorTxt">
+                  <h2 class="expositorH2">SohYeong Noh</h2>
+                  <h3 class="expositorH3">Director of Art Centre Nabi and a board member of CC Korea</h3>
+                  <p class="expositorP">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </div>
+      </div>
+      <div id="exponents" class="hideExponents"></div>
+  </div>
+  <button type="submit" id="seeMore" class="seeMore">MORE <img src="img/buttons/arrow_down.png"
+          alt="Down pointer arrow"></button>
+</section>
+<section id="partners">
+  <h2 id='partnersh2'>Partner</h2>
+  <div id='partnersimgcont'>
+      <img class='partnersimg' src="img/logos/mozilla.png" alt="mozilla logo">
+      <img class='partnersimg' src="img/logos/airbnb.png" alt="air bnd logo">
+      <img src="img/logos/g.png" class='partnersimg' alt="google logo">
+      <img src="img/logos/naver.png" alt="naver logo" class='partnersimg'>
+      <img src="img/logos/daumkakao.png" alt="" class='partnersimg'>
+  </div>
+</section>
+<footer id="copyRight">  
+  <div id="crLogo">
+    <a href="index.html"><img id="crLogoimg" src="img/logos/icon.png" alt="3d systems logo"></a>
+    <p  class="crTxtLogo">Developers<br>Summit 2022</p>
+  </div> 
+  <div id="crTxt">
+    <h3 class="crtTxt">3D Systems 2022</h3>
+    <p class="crtTxt hideAll">freedom-respecting software</p>
+    <p class="crtTxt hideText">freedom-respecting software Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Leo in vitae turpis massa.</p>
+  </div>
+  
+</footer>
+<div id="menu" class="active">
+  <div class="menu-cont" id="menuList">
+      <div id="iconMenu">
+          <img src="img/icons/close.png" class="menuClose" alt="icone-menu">
+      </div>            
+          <ul class="menuItem">
+              <li class="menuClose"><a href="about.html">About</a></li>
+              <li class="menuClose"><a href="">Program</a></li>
+              <li class="menuClose"><a href="">Join</a></li>
+              <li class="menuClose"><a href="">Sponsor</a></li>
+              <li class="menuClose"><a href="">News</a></li>
+              <li class="menuClose"><a href="">3D Campaing</a></li>
+          </ul>            
+  </div>
+</div>
   <script src="main.js"></script>
 </body>
-
 </html>
